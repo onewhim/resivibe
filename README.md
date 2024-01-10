@@ -3,7 +3,7 @@
   margin-right: auto;
   max-width: 300px; width: 50%; min-width: 100px;"/>
 
-The only resident / citizenship time presence caculator you ever need. Literally the best presence caculator ever existed.
+The only resident / citizenship time presence caculator you ever need. Literally the best ever existed.
 
 - 🦋 beautiful modern UI
 - 📱 mobile friendly
