@@ -10,9 +10,14 @@
     "up": "pnpm i react@canary react-dom@canary next@canary typescript@next eslint-config-next@canary && pnpm update --latest '!react' '!react-dom' '!next' '!typescript''!eslint-config-next'"
   },
   "dependencies": {
+    "@radix-ui/react-icons": "1.3.0",
+    "class-variance-authority": "0.7.0",
+    "clsx": "2.1.0",
     "next": "14.0.5-canary.50",
     "react": "18.3.0-canary-08cd087ca-20240110",
-    "react-dom": "18.3.0-canary-08cd087ca-20240110"
+    "react-dom": "18.3.0-canary-08cd087ca-20240110",
+    "tailwind-merge": "2.2.0",
+    "tailwindcss-animate": "1.0.7"
   },
   "devDependencies": {
     "@types/node": "20.11.0",
