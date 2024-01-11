@@ -1,6 +1,7 @@
 {
   "root": true,
   "extends": ["next/core-web-vitals"],
+  "plugins": ["@tanstack/query"],
   "overrides": [
     {
       "files": ["*.js"],
