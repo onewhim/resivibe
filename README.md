@@ -1,7 +1,6 @@
-<img alt="Resimate Logo" src="https://cdn.onewhim.com/resimate-logo-name-white.svg" style="display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 200 px; width: 40%; min-width: 150 px;"/>
+<p align="center">
+  <img alt="Resimate Logo" src="https://cdn.onewhim.com/resimate-logo-name-white.svg" style="max-width: 200 px; width: 40%; min-width: 150 px;"/>
+</p>
 
 The only resident / citizenship time presence caculator you ever need. Literally the best ever existed.
 
