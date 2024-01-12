@@ -2,6 +2,7 @@ import { create } from "zustand";
 import { persist, devtools, createJSONStorage } from "zustand/middleware";
 import { addDays } from "date-fns";
 import { Event, eventDemo } from "./features/event";
+import { immer } from "zustand/middleware/immer";
 
 interface AppState {
   currentDay: Date;
@@ -11,17 +12,23 @@ interface AppState {
 
 export const useAppStore = create<AppState>()(
   devtools(
-    persist(
-      (set, get) => ({
-        currentDay: new Date(),
-        addTwoDay: () =>
-          set({ currentDay: addDays(get().currentDay, 2) }, false, "addTwoDay"),
-        events: eventDemo,
-      }),
-      {
-        name: "app-store",
-        storage: createJSONStorage(() => localStorage),
-      }
+    immer(
+      persist(
+        (set, get) => ({
+          currentDay: new Date(),
+          addTwoDay: () =>
+            set(
+              { currentDay: addDays(get().currentDay, 2) },
+              false,
+              "addTwoDay"
+            ),
+          events: eventDemo,
+        }),
+        {
+          name: "app-store",
+          storage: createJSONStorage(() => localStorage),
+        }
+      )
     ),
     { name: "app-store" }
   )
