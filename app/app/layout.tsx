@@ -19,7 +19,8 @@ export const metadata: Metadata = {
     },
     {
       rel: "mask-icon",
-      url: "https://cdn.onewhim.com/resimate-logo-round.svg"
+      url: "https://cdn.onewhim.com/resimate-logo-round.svg",
+      color: "#FFFFFF",
     },
   ],
 };
