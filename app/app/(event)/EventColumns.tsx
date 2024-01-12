@@ -2,26 +2,33 @@
 
 import { Event } from "@/store/features/event";
 import { ColumnDef } from "@tanstack/react-table";
+import { format } from "date-fns";
 
 export const eventColumns: ColumnDef<Event>[] = [
   {
     accessorKey: "id",
-    header: "ID",
+    header: "Id",
   },
   {
     accessorKey: "name",
-    header: "name",
+    header: "Name",
   },
   {
     accessorKey: "date",
-    header: "date",
+    header: "Date",
+    cell: ({ getValue }) => {
+      const date = getValue() as Date;
+      const formatted = date ? format(date, "yyyy-MM-dd") : "";
+
+      return <div>{formatted}</div>;
+    },
   },
   {
     accessorKey: "desc",
-    header: "desc",
+    header: "Desc",
   },
   {
     accessorKey: "type",
-    header: "type",
+    header: "Type",
   },
 ];
