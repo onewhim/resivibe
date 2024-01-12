@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "sonner";
+import type { Viewport } from "next";
+
+export const viewport: Viewport = {
+  themeColor: "white",
+};
 
 export const metadata: Metadata = {
   title: "Resimate",
@@ -11,6 +16,10 @@ export const metadata: Metadata = {
     {
       rel: "apple-touch-icon",
       url: "https://cdn.onewhim.com/resimate-logo-mac.png",
+    },
+    {
+      rel: "mask-icon",
+      url: "https://cdn.onewhim.com/resimate-logo-round.svg"
     },
   ],
 };
