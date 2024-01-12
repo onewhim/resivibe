@@ -9,7 +9,7 @@ export interface Event {
 }
 export enum EventType {
   LEAVE = "LEAVE",
-  ENTERY = "ENTERY",
+  ENTRY = "ENTRY",
   UNKNOWN = "UNKNOWN",
 }
 export const eventDemo: Event[] = [
@@ -18,7 +18,7 @@ export const eventDemo: Event[] = [
     name: "Arrive in NZ",
     date: new Date(),
     desc: "",
-    type: EventType.ENTERY,
+    type: EventType.ENTRY,
   },
   {
     id: "1af1ed28-1f29-473a-bfb7-8a11dadaebee",
@@ -32,6 +32,6 @@ export const eventDemo: Event[] = [
     name: "Enter NZ",
     date: new Date(),
     desc: "",
-    type: EventType.ENTERY,
+    type: EventType.ENTRY,
   },
 ];
