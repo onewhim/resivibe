@@ -1,10 +1,12 @@
 import { create } from "zustand";
 import { persist, devtools, createJSONStorage } from "zustand/middleware";
 import { addDays } from "date-fns";
+import { Event, eventDemo } from "./features/event";
 
 interface AppState {
   currentDay: Date;
   addTwoDay: () => void;
+  events: Event[];
 }
 
 export const useAppStore = create<AppState>()(
@@ -14,6 +16,7 @@ export const useAppStore = create<AppState>()(
         currentDay: new Date(),
         addTwoDay: () =>
           set({ currentDay: addDays(get().currentDay, 2) }, false, "addTwoDay"),
+        events: eventDemo,
       }),
       {
         name: "app-store",
