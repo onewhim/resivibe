@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     {
       rel: "mask-icon",
       url: "https://cdn.onewhim.com/resimate-logo-round.svg",
-      color: "#FFFFFF",
+      color: "#000000",
     },
   ],
 };
