@@ -1,9 +1,13 @@
-name: "CodeQL"
+name: "Code Analysis"
 
 on:
   push:
+    paths:
+      - "app/**"
     branches: [ "main" ]
   pull_request:
+    paths:
+      - "app/**"
     branches: [ "main" ]
   schedule:
     - cron: '0 0 * * *'
@@ -24,14 +28,14 @@ jobs:
         language: [ 'javascript-typescript' ]
 
     steps:
-    - name: Checkout repository
+    - name: Checkout repo
       uses: actions/checkout@main
 
-    - name: Initialize CodeQL
+    - name: Setup CodeQL
       uses: github/codeql-action/init@main
       with:
         languages: ${{ matrix.language }}
-    - name: Perform CodeQL Analysis
+    - name: Perform Analysis
       uses: github/codeql-action/analyze@main
       with:
         category: "/language:${{matrix.language}}"

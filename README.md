@@ -11,6 +11,12 @@ The only resident / citizenship time presence caculator you ever need. Literally
 - 🌎 support tons of countries, if not, you just tell me
 - 🥳 community support
 
+
+Web (<https://resimate.onewhim.com/>) Work in progress
+
+Android App in plan
+
+iOS App in plan
 ---
 
 Any questions?
@@ -19,9 +25,9 @@ Open an issue or start a discussion in this repo so that **all people can search
 
 And feel free to join and talk on
 
-Reddit(https://www.reddit.com/r/resimate/)
+Reddit(<https://www.reddit.com/r/resimate/>)
 
-Discord Group(https://discord.gg/HySAxBZKdp)
+Discord Group(<https://discord.gg/HySAxBZKdp>)
 
 Telegram Group(<https://t.me/resimate>)
 
