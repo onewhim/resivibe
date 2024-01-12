@@ -23,6 +23,12 @@ export const useAppStore = create<AppState>()(
               "addTwoDay"
             ),
           events: eventDemo,
+          updateEvent: (event: Event) =>
+            set((state) => {
+              const index = state.events.findIndex((e) => e.id === event.id);
+              if (index === -1) return;
+              state.events[index] = event;
+            }),
         }),
         {
           name: "app-store",
