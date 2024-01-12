@@ -12,11 +12,12 @@ The only resident / citizenship time presence caculator you ever need. Literally
 - 🥳 community support
 
 
-Web (<https://resimate.onewhim.com/>) Work in progress
+Web app (<https://resimate.onewhim.com/>) Work in progress
 
-Android App in plan
+Android app in plan
 
-iOS App in plan
+iOS app in plan
+
 ---
 
 Any questions?
