@@ -1,8 +1,10 @@
+import App from "./App"
+
 export default function Home() {
   return (
     <main>
       <div>
-        Resimate App
+        <App />
       </div>
     </main>
   )
