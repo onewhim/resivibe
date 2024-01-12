@@ -7,6 +7,7 @@ import { immer } from "zustand/middleware/immer";
 interface AppState {
   currentDay: Date;
   addTwoDay: () => void;
+
   events: Event[];
 }
 
@@ -22,12 +23,23 @@ export const useAppStore = create<AppState>()(
               false,
               "addTwoDay"
             ),
+
           events: eventDemo,
+          addEvent: (event: Event) =>
+            set((state) => {
+              state.events.push(event);
+            }),
           updateEvent: (event: Event) =>
             set((state) => {
               const index = state.events.findIndex((e) => e.id === event.id);
               if (index === -1) return;
               state.events[index] = event;
+            }),
+          removeEvent: (event: Event) =>
+            set((state) => {
+              const index = state.events.findIndex((e) => e.id === event.id);
+              if (index === -1) return;
+              state.events.splice(index, 1);
             }),
         }),
         {
