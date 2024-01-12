@@ -1,4 +1,4 @@
-import App from "./App"
+import App from "./App";
 
 export default function Home() {
   return (
@@ -7,5 +7,5 @@ export default function Home() {
         <App />
       </div>
     </main>
-  )
+  );
 }
