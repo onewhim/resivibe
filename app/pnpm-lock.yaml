@@ -116,6 +116,9 @@ dependencies:
   immer:
     specifier: 10.0.3
     version: 10.0.3
+  lucide-react:
+    specifier: ^0.309.0
+    version: 0.309.0(react@18.3.0-canary-6639ed3b3-20240111)
   next:
     specifier: 14.0.5-canary.53
     version: 14.0.5-canary.53(react-dom@18.3.0-canary-6639ed3b3-20240111)(react@18.3.0-canary-6639ed3b3-20240111)
@@ -3535,6 +3538,14 @@ packages:
     dependencies:
       yallist: 4.0.0
     dev: true
+
+  /lucide-react@0.309.0(react@18.3.0-canary-6639ed3b3-20240111):
+    resolution: {integrity: sha512-zNVPczuwFrCfksZH3zbd1UDE6/WYhYAdbe2k7CImVyPAkXLgIwbs6eXQ4loigqDnUFjyFYCI5jZ1y10Kqal0dg==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.3.0-canary-6639ed3b3-20240111
+    dev: false
 
   /merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
