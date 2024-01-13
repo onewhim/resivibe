@@ -11,7 +11,7 @@ interface AppState {
   events: Event[];
   addEvent: (event: Event) => void;
   updateEvent: (event: Event) => void;
-  removeEvent: (event: Event) => void;
+  removeEvent: (id: string) => void;
 }
 
 export const useAppStore = create<AppState>()(
@@ -24,7 +24,7 @@ export const useAppStore = create<AppState>()(
             set(
               { currentDay: addDays(get().currentDay, 2) },
               false,
-              "addTwoDay",
+              "addTwoDay"
             ),
 
           events: eventDemo,
@@ -38,9 +38,12 @@ export const useAppStore = create<AppState>()(
               if (index === -1) return;
               state.events[index] = event;
             }),
-          removeEvent: (event: Event) =>
+          removeEvent: (id: string) =>
             set((state) => {
-              const index = state.events.findIndex((e) => e.id === event.id);
+              console.log(id)
+              console.log(state.events)
+              const index = state.events.findIndex((e) => e.id === id);
+              console.log(index)
               if (index === -1) return;
               state.events.splice(index, 1);
             }),
@@ -48,10 +51,10 @@ export const useAppStore = create<AppState>()(
         {
           name: "app-store",
           storage: createJSONStorage(() => localStorage),
-        },
-      ),
+        }
+      )
     ),
-    { name: "app-store" },
-  ),
+    { name: "app-store" }
+  )
 );
 // https://docs.pmnd.rs/zustand/integrations/persisting-store-data#simple-example
