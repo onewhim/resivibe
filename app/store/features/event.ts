@@ -1,10 +1,8 @@
-import { UUID } from "crypto";
-
 export interface Event {
-  id: UUID;
+  id: string;
   name: string;
   date: Date;
-  desc: string;
+  desc?: string;
   type: EventType;
 }
 export enum EventType {

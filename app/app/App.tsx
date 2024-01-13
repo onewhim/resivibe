@@ -1,8 +1,12 @@
 "use client";
-import { useAppStore } from "@/store/store";
-import { Button } from "@/components/ui/button";
+
 import { format } from "date-fns";
+
+import { useAppStore } from "@/store/store";
 import useStore from "@/store/useStore";
+
+import { Button } from "@/components/ui/button";
+
 import EventPage from "./(event)/EventPage";
 
 export default function App() {

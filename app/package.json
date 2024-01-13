@@ -46,6 +46,7 @@
     "date-fns": "3.2.0",
     "embla-carousel-react": "8.0.0-rc19",
     "immer": "10.0.3",
+    "lucide-react": "0.309.0",
     "next": "14.0.5-canary.53",
     "next-themes": "0.2.1",
     "react": "18.3.0-canary-6639ed3b3-20240111",
@@ -62,6 +63,7 @@
   },
   "devDependencies": {
     "@tanstack/eslint-plugin-query": "5.17.7",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/node": "20.11.0",
     "@types/react": "18.2.47",
     "@types/react-dom": "18.2.18",

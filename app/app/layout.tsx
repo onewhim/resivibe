@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import { Toaster } from "sonner";
 import type { Viewport } from "next";
+import { Toaster } from "sonner";
+
+import "./globals.css";
 
 export const viewport: Viewport = {
   themeColor: "white",
