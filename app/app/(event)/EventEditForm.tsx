@@ -52,7 +52,7 @@ const formSchema = z.object({
       message: "😲 Do you need more than 1000 characters?",
     })
     .optional(),
-  date: z
+  date: z.coerce
     .date()
     .min(new Date(2022, 1, 1), {
       message: "🥰 You forget to pick a date.",
@@ -143,12 +143,13 @@ export default function EventEditForm({
                     <PopoverContent className="w-auto p-0" align="start">
                       <Calendar
                         mode="single"
-                        selected={field.value}
+                        selected={new Date(field.value)}
                         onSelect={field.onChange}
                         disabled={(date) =>
-                          date > new Date() || date < new Date("1970-01-01")
+                          date > new Date() || date < new Date("2010-01-01")
                         }
-                        initialFocus
+                        defaultMonth={field.value || new Date()}
+                        fixedWeeks
                       />
                     </PopoverContent>
                   </Popover>
