@@ -11,12 +11,11 @@ The only resident / citizenship time presence caculator you ever need. Literally
 - 🌎 support tons of countries, if not, you just tell me
 - 🥳 community support
 
+Web app (<https://resimate.onewhim.com/>) Work in progress, star now to get notified when it's ready!
 
-Web app (<https://resimate.onewhim.com/>) Work in progress
+Android app in plan, will be written in native language Kotlin.
 
-Android app in plan
-
-iOS app in plan
+iOS app in plan, will be written in native language Swift.
 
 ---
 
