@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Resimate Logo" src="https://cdn.onewhim.com/resimate-logo-name-white.svg" style="max-width: 200 px; width: 40%; min-width: 150 px;"/>
+  <img alt="Resivibe Logo" src="https://cdn.resivibe.com/resivibe-logo-name-white.svg" style="max-width: 200 px; width: 40%; min-width: 150 px;"/>
 </p>
 
 The only resident / citizenship time presence caculator you ever need. Literally the best ever existed.
@@ -11,7 +11,9 @@ The only resident / citizenship time presence caculator you ever need. Literally
 - 🌎 support tons of countries, if not, you just tell me
 - 🥳 community support
 
-Web app (<https://resimate.onewhim.com/>) Work in progress, star now to get notified when it's ready!
+Web app (<https://resivibe.com/>) Work in progress, star now to get notified when it's ready!
+
+Landing Page in progress!
 
 Android app in plan, will be written in native language Kotlin.
 
@@ -25,14 +27,12 @@ Open an issue or start a discussion in this repo so that **all people can search
 
 And feel free to join and talk on
 
-Reddit(<https://www.reddit.com/r/resimate/>)
+Reddit(<https://www.reddit.com/r/resivibe/>)
 
 Discord Group(<https://discord.gg/HySAxBZKdp>)
 
-Telegram Group(<https://t.me/resimate>)
+Telegram Group(<https://t.me/resivibe>)
 
-Facebook Group(<https://www.facebook.com/groups/resimate/>)
-
-Facebook Page(<https://www.facebook.com/resimate.co>)
+Facebook Group(<https://www.facebook.com/groups/resivibe/>)
 
 For private discussions, please talk with Lucas Quinn <lucas.quinn.tech@gmail.com>

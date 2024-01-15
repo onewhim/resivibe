@@ -1,5 +1,10 @@
-### Resimate web app
+### Resivibe web app
 
-This is the web app of Resimate.
+This is the web app of Resivibe, working in progress.
 
-React
+- React
+- Next.js
+- Zustand
+- Tailwind CSS
+- Radix
+- shadcn/ui

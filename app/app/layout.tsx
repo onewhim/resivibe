@@ -9,18 +9,18 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Resimate",
+  title: "Resivibe",
   description:
     "🎉Modern private open-source presence calculator for resident/citizenship.",
   icons: [
-    { rel: "icon", url: "https://cdn.onewhim.com/resimate-logo-round.svg" },
+    { rel: "icon", url: "https://cdn.resivibe.com/resivibe-logo-round.svg" },
     {
       rel: "apple-touch-icon",
-      url: "https://cdn.onewhim.com/resimate-logo-mac.png",
+      url: "https://cdn.resivibe.com/resivibe-logo-mac.png",
     },
     {
       rel: "mask-icon",
-      url: "https://cdn.onewhim.com/resimate-logo-round.svg",
+      url: "https://cdn.resivibe.com/resivibe-logo-round.svg",
       color: "#000000",
     },
   ],
