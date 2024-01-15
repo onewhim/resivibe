@@ -1,15 +1,13 @@
-Open an issue or start a discussion in this GitHub repo so that **all people can search for and view it publicly. We do support openly.**
+Open an issue or start a discussion in this repo so that **all people can search for and view it publicly. We do support openly.**
 
-And feel free to talk on
+And feel free to join and talk on
 
-Reddit(https://www.reddit.com/r/resimate/)
+Reddit(<https://www.reddit.com/r/resivibe/>)
 
-Discord Group(https://discord.gg/HySAxBZKdp)
+Discord Group(<https://discord.gg/HySAxBZKdp>)
 
-Telegram Group(<https://t.me/resimate>)
+Telegram Group(<https://t.me/resivibe>)
 
-Facebook Group(<https://www.facebook.com/groups/resimate/>)
-
-Facebook Page(<https://www.facebook.com/resimate.co>)
+Facebook Group(<https://www.facebook.com/groups/resivibe/>)
 
 For private discussions, please talk with Lucas Quinn <lucas.quinn.tech@gmail.com>
