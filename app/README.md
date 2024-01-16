@@ -2,6 +2,8 @@
 
 This is the web app of Resivibe, working in progress.
 
+Built with:
+
 - React
 - Next.js
 - Zustand

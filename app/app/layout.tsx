@@ -11,7 +11,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Resivibe",
   description:
-    "🎉Modern private open-source presence calculator for resident/citizenship.",
+    "🎉Modern private presence calculator for resident/citizenship.",
   icons: [
     { rel: "icon", url: "https://cdn.cloudwhim.com/resivibe-logo-round.svg" },
     {
