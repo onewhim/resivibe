@@ -10,7 +10,7 @@ on:
       - "app/**"
     branches: [ "main" ]
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0 * * 1'
 
 jobs:
   analyze:
