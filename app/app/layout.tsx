@@ -12,17 +12,11 @@ export const metadata: Metadata = {
   title: "Resivibe",
   description: "🎉Modern private presence calculator for resident/citizenship.",
   icons: [
-    { rel: "shortcut icon", url: "/favicon.ico", type: "image/x-icon", sizes: "16x16 32x32 48x48"},
-    { rel: "icon", url: "https://cdn.cloudwhim.com/resivibe-logo.svg" },
+    { rel: "shortcut icon", url: "/favicon.ico", type: "image/x-icon"},
     {
       rel: "apple-touch-icon",
-      url: "https://cdn.cloudwhim.com/resivibe-logo-mac.png",
-    },
-    {
-      rel: "mask-icon",
-      url: "https://cdn.cloudwhim.com/resivibe-logo.svg",
-      color: "#FFFFFF",
-    },
+      url: "/apple-touch-icon.png",
+    }
   ],
 };
 
