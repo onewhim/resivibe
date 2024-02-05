@@ -10,19 +10,13 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: "Resivibe",
-  description:
-    "🎉Modern private presence calculator for resident/citizenship.",
+  description: "🎉Modern private presence calculator for resident/citizenship.",
   icons: [
-    { rel: "icon", url: "https://cdn.cloudwhim.com/resivibe-logo.svg" },
+    { rel: "shortcut icon", url: "/favicon.ico", type: "image/x-icon"},
     {
       rel: "apple-touch-icon",
-      url: "https://cdn.cloudwhim.com/resivibe-logo-mac.png",
-    },
-    {
-      rel: "mask-icon",
-      url: "https://cdn.cloudwhim.com/resivibe-logo.svg",
-      color: "#FFF",
-    },
+      url: "/apple-touch-icon.png",
+    }
   ],
 };
 
