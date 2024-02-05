@@ -13,15 +13,15 @@ export const metadata: Metadata = {
   description:
     "🎉Modern private presence calculator for resident/citizenship.",
   icons: [
-    { rel: "icon", url: "https://cdn.cloudwhim.com/resivibe-logo-round.svg" },
+    { rel: "icon", url: "https://cdn.cloudwhim.com/resivibe-logo.svg" },
     {
       rel: "apple-touch-icon",
       url: "https://cdn.cloudwhim.com/resivibe-logo-mac.png",
     },
     {
       rel: "mask-icon",
-      url: "https://cdn.cloudwhim.com/resivibe-logo-round.svg",
-      color: "#000000",
+      url: "https://cdn.cloudwhim.com/resivibe-logo.svg",
+      color: "#FFF",
     },
   ],
 };
