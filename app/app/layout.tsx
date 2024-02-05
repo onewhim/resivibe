@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Resivibe",
   description: "🎉Modern private presence calculator for resident/citizenship.",
   icons: [
-    { rel: "shortcut icon", url: "/favicon.ico", type: "image/x-icon"},
+    { rel: "icon", url: "/favicon.ico"},
     {
       rel: "apple-touch-icon",
       url: "/apple-touch-icon.png",
