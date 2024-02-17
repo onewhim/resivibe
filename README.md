@@ -6,9 +6,9 @@ The only resident / citizenship time presence caculator you ever need. Literally
 
 - 🦋 beautiful modern UI
 - 📱 mobile friendly
-- 🔎 all code is supervised by public
-- 🔒 complete private and secure, no any tracking
-- 🌎 support in tons of countries, if not, you just tell us
+- 🔎 code is supervised by public
+- 🔒 complete private and secure
+- 🌎 support in tons of countries
 - 🥳 huge community support
 
 Web app (<https://resivibe.com/>) Work in progress, star now to get notified when it's ready!
