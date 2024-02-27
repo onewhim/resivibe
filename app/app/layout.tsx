@@ -10,13 +10,14 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: "Resivibe",
-  description: "🎉Modern private presence calculator for resident/citizenship.",
+  description:
+    "🎉 Modern private presence calculator for resident / citizenship.",
   icons: [
-    { rel: "icon", url: "/favicon.ico"},
+    { rel: "icon", url: "/favicon.ico" },
     {
       rel: "apple-touch-icon",
       url: "/apple-touch-icon.png",
-    }
+    },
   ],
 };
 
