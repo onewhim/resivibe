@@ -4,10 +4,10 @@
 
 The only resident / citizenship time presence caculator you ever need. Literally the best ever existed.
 
-- 🦋 beautiful modern UI
+- 🦋 beautiful UI
 - 📱 mobile friendly
-- 🔎 code is supervised by public
-- 🔒 complete private and secure
+- 🔥 modern tech
+- 🔒 private and secure
 - 🌎 support in tons of countries
 - 🥳 huge community support
 
