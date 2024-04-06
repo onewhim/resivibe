@@ -1,0 +1,65 @@
+name: "Deploy app"
+
+on:
+  push:
+    paths:
+      - "app/**"
+    branches: ["main"]
+  pull_request:
+    paths:
+      - "app/**"
+    branches: ["main"]
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./app
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+      - uses: pnpm/action-setup@master
+        name: Setup pnpm
+        with:
+          version: latest
+          run_install: false
+
+      - name: Get path
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - uses: actions/cache@main
+        name: Check pnpm cache
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-app-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-app-pnpm-store-
+      - name: Check app cache
+        uses: actions/cache@main
+        with:
+          path: |
+            app/.next/cache
+          key: ${{ runner.os }}-app-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-app-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}
+      - name: Install deps
+        run: pnpm i --frozen-lockfile
+      - name: Build app
+        run: pnpm build
+      - name: Deploy app
+        uses: cloudflare/pages-action@main
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: resivibe
+          directory: out
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          workingDirectory: app
+          wranglerVersion: "beta"
