@@ -3,11 +3,11 @@ name: "Code Analysis"
 on:
   push:
     paths:
-      - "app/**"
+      - "web/**"
     branches: [ "main" ]
   pull_request:
     paths:
-      - "app/**"
+      - "web/**"
     branches: [ "main" ]
   schedule:
     - cron: '0 0 * * 1'
