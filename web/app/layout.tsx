@@ -11,7 +11,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Resivibe",
   description:
-    "🎉 Modern private presence calculator for resident / citizenship.",
+    "🔥 The timeline sharing community.",
   icons: [
     { rel: "icon", url: "/favicon.ico" },
     {
