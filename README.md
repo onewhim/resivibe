@@ -2,22 +2,19 @@
   <img alt="Resivibe Logo" src="https://cdn.cloudwhim.com/resivibe-logo-name.svg" style="max-width: 200 px; width: 40%; min-width: 150 px;"/>
 </p>
 
-The only resident / citizenship time presence caculator you ever need. Literally the best ever existed.
+The timeline sharing community.
 
-- 🦋 beautiful UI
-- 📱 mobile friendly
-- 🔥 modern tech
-- 🔒 private and secure
-- 🌎 support in tons of countries
-- 🥳 huge community support
+- 🦋 Appealing UI
+- 📱 Mobile Friendly
+- 🔥 Top-Quality Tech Stack
+- 🌍 Invincible Transparency
+- 🥳 Support From Everywhere
 
 Web app (<https://resivibe.com/>) Work in progress, star now to get notified when it's ready!
 
-Landing Page in progress!
+Android app in progress.
 
-Android app in plan, will be written in native language Kotlin.
-
-iOS app in plan, will be written in native language Swift.
+iOS app in progress.
 
 ---
 
