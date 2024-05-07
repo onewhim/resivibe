@@ -1,13 +1,13 @@
-name: "Deploy app"
+name: "Deploy web"
 
 on:
   push:
     paths:
-      - "app/**"
+      - "web/**"
     branches: ["main"]
   pull_request:
     paths:
-      - "app/**"
+      - "web/**"
     branches: ["main"]
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./app
+        working-directory: ./web
     permissions:
       contents: read
       deployments: write
@@ -38,22 +38,22 @@ jobs:
         name: Check pnpm cache
         with:
           path: ${{ env.STORE_PATH }}
-          key: ${{ runner.os }}-app-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          key: ${{ runner.os }}-web-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-app-pnpm-store-
-      - name: Check app cache
+            ${{ runner.os }}-web-pnpm-store-
+      - name: Check web cache
         uses: actions/cache@main
         with:
           path: |
-            app/.next/cache
-          key: ${{ runner.os }}-app-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}
+            web/.next/cache
+          key: ${{ runner.os }}-web-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-app-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}
+            ${{ runner.os }}-web-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}
       - name: Install deps
         run: pnpm i --frozen-lockfile
-      - name: Build app
+      - name: Build web
         run: pnpm build
-      - name: Deploy app
+      - name: Deploy web
         uses: cloudflare/pages-action@main
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -61,5 +61,5 @@ jobs:
           projectName: resivibe
           directory: out
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          workingDirectory: app
+          workingDirectory: web
           wranglerVersion: "beta"
